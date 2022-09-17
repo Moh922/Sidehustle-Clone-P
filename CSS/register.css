@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: scroll;
+}
+/* Hide scrollbar for chrome and opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+button{
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color:  rgb(105, 167, 105);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+button a{
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+button a:hover{
+    color: grey;
+}
+
+.background{
+    height: 60px;
+    width: 120%;
+    background-color: rgb(159, 209, 159);
+    margin-top: 30px;
+    position: relative;
+}
+
+.texts{
+    margin: auto 30px;
+}
+
+.texts h2{
+    color: white;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.background p{
+    text-align: center;
+    padding: 15px;
+    font-weight: 400;
+}
+
+.background p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-control{
+    height: 55px;   
+}
+
+li{
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+p a{
+    font-weight: 400;
+    color: rgb(100, 165, 100);
+    }

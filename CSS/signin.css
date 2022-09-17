@@ -1,0 +1,204 @@
+
+:root{
+--light-green: rgb(187 221 187 / 1);
+--green: rgb(82 163 80 / 1);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: white;
+    overflow-y: scroll;
+}
+/* Hide scrollbar for chrome and opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+#container {
+    height: 100vh;
+}
+
+ .list, .img-1, .register {
+    display: none;
+}
+
+
+
+
+.images{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 22px 20px;
+}
+.text{
+    font-size: 22px;
+}
+.note{
+    margin-bottom: 30px;
+    background-color: var(--light-green);
+    padding: 18px;
+    font-size: .9rem;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.form{
+    margin: 15px;
+}
+.form h2{
+    margin-bottom: 20px;
+}
+.form p{
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+input{
+    border: none;
+    padding: 15px;
+    outline: none;
+    font-size: 16px;
+}
+fieldset {
+    margin-bottom: 30px;
+    border-radius: 5px;
+    /* border-color: rgb(225 240 224 / .5);; */
+}
+.password-box{
+    position: relative;
+}
+.eye{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+button{
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: var(--green);
+    color: white;
+    font-size: 1.1rem;
+}
+.foot p{
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px 0px 0px ;
+}
+span{
+    color: var(--green);
+    /* font-weight: 500; */
+}
+.whatsapp{
+    /* margin-bottom: 50px; */
+    margin-top: 85px;
+    margin-left: 88%;
+    color: var(--green);
+}
+#whatsapp{
+    font-size: 50px;
+}
+.chat{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+        /* For Desktops */
+@media only screen and (min-width: 1024px){
+    #container {
+        display: flex;
+    }
+    .img-2, .text {
+        display: none;
+    }
+    .list, .img-1{
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+    .LHS{
+        max-width: 42vw;
+        height: 50rem;
+        background-image: url(img/zig-zag.svg),
+        url(img/coral-bg.svg),
+        linear-gradient(180deg,#1a1f1a 0%,#232a23 100%);
+        background-repeat: no-repeat, no-repeat;
+        background-position: center, center;
+        background-size: cover, cover;
+    }
+    .inner{
+        margin: 10% 10%;
+    }
+    .list h1{
+        margin: 40px 0px 40px 20px;
+        line-height: 2.5rem;
+        font-size: 2rem;
+        font-family: sans-serif;
+    }
+    .list ul li{
+        list-style-position: inside;
+        margin-left: 20px;
+        font-size: 1.8rem;
+        line-height: 4rem;
+    }
+    .register{
+        width: 130px;
+        display: flex;
+        justify-content: end;
+        border: 3px solid rgb(82 163 80 / .5);
+        background-color: rgb(187 221 187 / .5);
+        margin: 30px 6% 20px 80%;
+        padding: 10px 20px 10px 10px;
+        border-radius: 10px;
+        font-size: 1.4rem;
+    }
+    .RSH{
+        width: 70%;
+    }
+    .note{
+        margin-top: 40px;
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+    .form-2{
+        margin: 5% 20% 0;
+    }
+    .form h2{
+        font-size: 2.3rem;
+    }
+    .form p{
+        margin-bottom: 40px;
+        font-size: 1.6rem;
+    }
+    fieldset {
+        margin-bottom: 40px;
+    }
+    .whatsapp{
+        margin-top: -80px;
+        margin-left: 95%;
+    }
+}
+
+
+        /* medium Screen */
+@media only screen and (min-width: 600px){
+    .note{
+       font-size: 1.2rem;
+    }
+}
